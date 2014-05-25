@@ -5,7 +5,7 @@
     </span>
     <span class="content"><%= feed_item.content %></span>
     
-    <p><%= image_tag feed_item.image_url %></p>
+    <p><%= image_tag feed_item.image_url(:thumb) %></p>
     <span class="timestamp">
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>

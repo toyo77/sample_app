@@ -1,5 +1,5 @@
-# Ruby on Rails チュートリアル：サンプルアプリケーション
+# Seemore
 
-これは、以下のためのサンプルアプリケーションです。
-[*Ruby on Rails Tutorial*](http://railstutorial.jp/)
-by [Michael Hartl](http://michaelhartl.com/).
+これは、写真共有サイトSeemoreです。
+[*Seemore*](http://railstutorial.jp/)
+by [Toyo](http://michaelhartl.com/).
