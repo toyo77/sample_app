@@ -4,6 +4,8 @@ class Micropost < ActiveRecord::Base
   validates :content, presence: true, length: { maximum: 140 }
   validates :user_id, presence: true
 
+  mount_uploader :image, ImageUploader
+
   # 与えられたユーザーがフォローしているユーザー達のマイクロポストを返す。
   def self.from_users_followed_by(user)
     followed_user_ids = "SELECT followed_id FROM relationships

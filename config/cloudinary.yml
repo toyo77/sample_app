@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hiz7vi6au
+  api_key: '566421639839281'
+  api_secret: rR2WNDpevMy-Hm0F22MsccYfGv4
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hiz7vi6au
+  api_key: '566421639839281'
+  api_secret: rR2WNDpevMy-Hm0F22MsccYfGv4
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hiz7vi6au
+  api_key: '566421639839281'
+  api_secret: rR2WNDpevMy-Hm0F22MsccYfGv4
+  enhance_image_tag: true
+  static_image_support: false
