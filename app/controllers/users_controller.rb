@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     # 検索フォームの入力内容で検索する
     @search = User.search(params[:q])
     # 重複を排除
-    @users = @search.result(distinct: true)
+    @users = @search.result(distinct: true).paginate(page: params[:page])
   end
 
   def show

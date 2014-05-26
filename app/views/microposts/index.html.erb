@@ -1,10 +1,10 @@
-<% provide(:title, 'All users') %>
-<h1>All users</h1>
+<% provide(:title, 'All posts') %>
+<h1>All posts</h1>
 
   <%= search_form_for @search do |f| %>
   <div class="control-group">
    <div class="controls">
-      <%= f.text_field :name_cont , placeholder: "search", class: "input-large" %>
+      <%= f.text_field :content_cont , placeholder: "search", class: "input-large" %>
       <%= f.submit "search", class: "btn btn-large btn-primary" %>
     </div>
   </div>
@@ -12,8 +12,8 @@
 
 <%= will_paginate %>
 
-<ul class="users">
-<%= render @users %>
+<ul class="microposts">
+<%= render @microposts %>
 </ul>
 
 <%= will_paginate %>

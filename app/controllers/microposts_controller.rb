@@ -2,6 +2,12 @@ class MicropostsController < ApplicationController
   before_action :signed_in_user
   before_action :correct_user,   only: :destroy
 
+  def index
+    @search = Micropost.search(params[:q])
+   # 重複を排除
+    @microposts = @search.result(distinct: true).paginate(page: params[:page])
+  end
+
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
