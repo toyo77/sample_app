@@ -1,14 +1,17 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
 
+
   <%= search_form_for @search do |f| %>
   <div class="control-group">
-    <%= f.label :name_cont %>
-    <div class="controls">
-      <%= f.text_field :name_cont %>
+   <div class="controls">
+      <%= f.text_field :name_cont , placeholder: "search" %>
+      <%= f.submit "search", class: "btn btn-large btn-primary" %>
     </div>
   </div>
-  <%= f.submit %>
   <% end %>
 
+
+<ul class="users">
 <%= render @users %>
+</ul>
