@@ -5,7 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
+    #@users = User.paginate(page: params[:page])
+    # 検索フォームの入力内容で検索する
+    @search = User.search(params[:q])
+    # 重複を排除
+    @users = @search.result(distinct: true)
   end
 
   def show
