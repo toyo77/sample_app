@@ -5,7 +5,7 @@ class MicropostsController < ApplicationController
   def index
     @search = Micropost.search(params[:q])
    # 重複を排除
-    @microposts = @search.result(distinct: true).paginate(page: params[:page])
+    @feed_items = @search.result(distinct: true).paginate(page: params[:page])
   end
 
   def create
