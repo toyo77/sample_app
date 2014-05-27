@@ -18,6 +18,7 @@
   </div>
 <% else %>
   <div class="center hero-unit">
+    <div class="home-image">
     <h1>ようこそ seemore</h1>
 
     <h2>
@@ -26,7 +27,8 @@
 
     <%= link_to "Sign up now!", signup_path,
                                 class: "btn btn-large btn-primary" %>
+    </div>
   </div>
 
-  <%= link_to image_tag("hokkaido.png", alt: "Rails"), 'http://japan-festival.net/category/place-to-go/hokkaido/' %>
+  <!-- # <%= link_to image_tag("hokkaido.png", alt: "Rails"), 'http://japan-festival.net/category/place-to-go/hokkaido/' %> -->
 <% end %>

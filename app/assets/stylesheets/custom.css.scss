@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -9,6 +10,14 @@ $grayMediumLight: #eaeaea;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* toppage */
+.hero-unit {
+  height: 370px;
+  width: 820px;
+  background-image: url(home.jpg);
+}
+
 
 /* universal */
 
