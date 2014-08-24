@@ -1,5 +1,12 @@
 <% if signed_in? %>
   <div class="row">
+    <div class="center hero-unit">
+      <section>
+         <%= render 'shared/main_photo' %>
+      </section>
+    </div>
+  </div>
+  <div class="row">
     <aside class="span4">
       <section>
          <%= render 'shared/user_info' %>
