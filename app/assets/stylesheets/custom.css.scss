@@ -15,7 +15,16 @@ $grayMediumLight: #eaeaea;
 .hero-unit {
   height: 370px;
   width: 820px;
-  background-image: url(https://seemore-001.herokuapp.com/assets/home-9ac9b6c0d0b9cf25fdc30517534a0268.jpg);
+  background-image: url(/images/home.jpg);
+}
+.hero-unit h1 {
+  color: white;
+}
+.hero-unit h2 {
+  color: white;
+}
+.btn-warning {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.84);
 }
 
 
