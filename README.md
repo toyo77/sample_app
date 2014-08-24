@@ -1,5 +1,5 @@
-# Seemore
+# Pinder
 
-これは、写真共有サイトSeemoreです。
-[*Seemore*](http://railstutorial.jp/)
+これは、写真共有サイトPinderです。
+[*Pinder*](http://railstutorial.jp/)
 by [Toyo](http://michaelhartl.com/).
