@@ -1,7 +1,8 @@
 <!-- <div>現在時刻：<%= Time.now %></div> -->
 <div id="result">
   <!-- 現在時刻：<%= Time.now %> -->
-<p><%= image_tag '/images/beer.jpg' %></p>
+<% @photos = ["/images/beer.jpg","/images/curry.jpg","/images/dou.jpg", "/images/ferry.jpg","/images/kindai.jpg", "/images/kuma.jpg","/images/tomoro.jpg","/images/mtrishiri.jpg"].shuffle %>
+<p><%= image_tag @photos[0] %></p>
 </div>
 
 <br>
