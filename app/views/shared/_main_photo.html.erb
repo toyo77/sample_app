@@ -1,6 +1,11 @@
+<!-- <div>現在時刻：<%= Time.now %></div> -->
+<div id="result">
+  <!-- 現在時刻：<%= Time.now %> -->
 <p><%= image_tag '/images/beer.jpg' %></p>
+</div>
+
 <br>
-<%= link_to "行きたい", signup_path,
-                            class: "btn btn-large btn-warning" %>
-<%= link_to "またあとで", signup_path,
-                            class: "btn btn-large btn-warning" %>
+<%= link_to "行きたい",  { action: :home },
+                            class: "btn btn-large btn-warning", remote: true %>
+<%= link_to "またあとで", { action: :home },
+                            class: "btn btn-large btn-warning", remote: true %>

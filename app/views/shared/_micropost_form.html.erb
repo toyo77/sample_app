@@ -4,7 +4,7 @@
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
   <%= image_tag @micropost.image.thumb.url if @micropost.image? %>
-  <%= f.file_field :image , class: "btn"%>  
+  <%= f.file_field :image , class: "btn"%>
   <%= f.hidden_field :image_cache %>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
